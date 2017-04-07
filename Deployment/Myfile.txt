@@ -1,1 +1,8 @@
+<<<<<<< Updated upstream
 Change in this file
+=======
+changes in my file 
+which is 
+different from server 
+versions
+>>>>>>> Stashed changes
