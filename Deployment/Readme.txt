@@ -4,3 +4,5 @@ learn stash
 
 learn jenkins for global git repository ( Global Git Repository jenkins pipe line name)  working fine.
 
+learn jenkins for global git repository with webhook.
+
