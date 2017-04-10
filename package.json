@@ -1,5 +1,5 @@
 {
-  "name": "Deployment App",
+  "name": "DeploymentApp",
   "version": "1.0.0",
   "description": "Jenkins deployment",
   "private": true,
