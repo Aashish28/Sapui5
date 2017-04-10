@@ -1,0 +1,31 @@
+{
+  "name": "Deployment App",
+  "version": "1.0.0",
+  "description": "Jenkins deployment",
+  "private": true,
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aashish28/Sapui5.git"
+  },
+  "keywords": [
+    "Deployment App",
+    "collaboration",
+    "git",
+    "Accenture"
+  ],
+  "author": "Accenture",
+  "contributors": [
+    "Accenture <*@accenture.com>",
+    "Siemens <*@siemens.com>"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "eslint": "^1.6.0",
+    "grunt-eslint": "^17.2.0"
+  }
+}
