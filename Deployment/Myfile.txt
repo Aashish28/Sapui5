@@ -7,4 +7,10 @@ different from server
 versions
 >>>>>>> Stashed changes
 
+<<<<<<< HEAD
 Test
+=======
+Test from server side
+
+
+>>>>>>> e02f9121f259cca812aabbf36fae911af5ecaa22

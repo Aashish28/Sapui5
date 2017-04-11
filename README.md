@@ -3,4 +3,4 @@ Sapui5
 
 SAPUI5 Projects
 
-Changes
+Changes in read me file with new script
