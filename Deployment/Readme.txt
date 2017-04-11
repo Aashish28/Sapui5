@@ -12,4 +12,4 @@ Test new credential
 
 Test Echo build fail check test batch file test with change 
 
-New test configure
+New test configure 1
