@@ -1,0 +1,17 @@
+{
+  "name": "gruntopenui5",
+  "version": "0.0.1",
+  "description": "Grunt based openui5 practice",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^1.2.1",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-openui5": "^0.16.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "start": "grunt serve"
+  },
+  "author": "Ashish Ahire",
+  "license": "ISC"
+}

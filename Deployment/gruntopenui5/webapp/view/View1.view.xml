@@ -1,0 +1,13 @@
+<mvc:View controllerName="com.gruntopenui5.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Page id="page" title="{i18n>title}">
+		<content></content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<Button id="btnMsgPopover" icon="sap-icon://message-popup" text="{= ${messages>/}.length || '' }"
+						type="{= ${messages>/}.length > 0 ? 'Emphasized': 'Default' }" press="onMessagePopoverPress"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>
