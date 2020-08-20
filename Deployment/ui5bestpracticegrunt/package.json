@@ -1,0 +1,9 @@
+{
+  "name": "ui5bestpracticegrunt",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "@sap/grunt-sapui5-bestpractice-build": "^1.4.6"
+  },
+  "private": "true"
+}
