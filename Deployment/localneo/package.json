@@ -1,0 +1,21 @@
+{
+  "name": "localneo",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "@sap/ui5-builder-webide-extension": "1.0.x",
+    "@ui5/cli": "1.13.0",
+    "@uniorg/localneo": "^1.8.1"
+  },
+  "scripts": {
+    "start": "localneo",
+    "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo"
+  },
+  "ui5": {
+    "dependencies": [
+      "@sap/ui5-builder-webide-extension",
+      "@uniorg/localneo"
+    ]
+  },
+  "private": "true"
+}

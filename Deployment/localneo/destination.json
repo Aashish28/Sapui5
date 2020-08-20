@@ -1,0 +1,27 @@
+{
+    "server": {
+      "port": "12345",
+      "hostname": "localhost",
+      "open": true
+    },
+    "service": {
+      "sapui5": {
+        "useSAPUI5": true,
+        "version": "1.71.0"
+      }
+    },
+    // "applications": { 
+    //   "mylib": {
+    //     "path": "../mylib"
+    //   },
+    //   "images": {
+    //      "path": "/var/www/images"
+    //   }
+    //},
+   
+    "destinations": {
+      "SAP_BACKEND": {
+        "url": "https://our_secret_sap_system.com" 
+      }
+    }
+  }
