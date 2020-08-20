@@ -1,0 +1,13 @@
+<mvc:View controllerName="com.ui5tooling.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					<Text text="Happy Learning of UI5 tooling \n Simple proxy \n Static Server \n Live reload "/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
