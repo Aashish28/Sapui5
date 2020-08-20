@@ -21,11 +21,10 @@
     "xyz <*@xyz.com>",
     "xyz <*@xyz.com>"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "eslint": "^1.10.3",
     "grunt": "^0.4.5",
-    //"eslint": "^1.6.0",
     "grunt-eslint": "^17.2.0"
   }
 }
