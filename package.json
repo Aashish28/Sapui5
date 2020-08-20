@@ -16,10 +16,10 @@
     "git",
     "Accenture"
   ],
-  "author": "Accenture",
+  "author": "xyz",
   "contributors": [
-    "Accenture <*@accenture.com>",
-    "Accenture <*@accenture.com>"
+    "xyz <*@xyz.com>",
+    "xyz <*@xyz.com>"
   ],
   "dependencies": {
   },
