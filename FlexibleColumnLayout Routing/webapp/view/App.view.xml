@@ -1,0 +1,6 @@
+<mvc:View controllerName="com.BestPractice.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml"
+	displayBlock="true" xmlns="sap.m">
+	<Shell id="shell" appWidthLimited="false">
+		<App id="app"></App>
+	</Shell>
+</mvc:View>

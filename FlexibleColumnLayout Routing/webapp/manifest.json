@@ -1,0 +1,146 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "com.BestPractice",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "saaqUi5WebIdeExtension.saaqui5basetemplate",
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"fullWidth": true,
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"handleValidation": true,
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "com.BestPractice.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.BestPractice.i18n.i18n"
+				}
+			},
+			"mainModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"preload": false
+			},
+			"vhModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"preload": false
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.f.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "com.BestPractice.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"bypassed": {
+					"target": [
+						"notFound"
+					]
+				}
+			},
+			"routes": [
+				{
+					"name": "RouteMain",
+					"pattern": ":layout:",
+					"target": [
+						"TargetMain",
+						"Master",
+						"Detail"
+					]
+				},
+				{
+					"pattern": "detail/{product}/{layout}",
+					"name": "detail",
+					"target": [
+						"Master",
+						"Detail"
+					]
+				}
+			],
+			"targets": {
+				"TargetMain": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewId": "Main",
+					"viewName": "Main",
+					"viewLevel": 1					
+				},
+				"Master": {
+                    "parent": "TargetMain",
+					"viewType": "XML",
+					"viewName": "Master",
+					"viewPath": "com.BestPractice.view",
+					"controlId": "flexibleColumnLayout",
+					"controlAggregation": "beginColumnPages"
+				},
+				"Detail": {
+                    "parent": "TargetMain",
+					"viewType": "XML",
+					"viewName": "Detail",
+					"viewPath": "com.BestPractice.view",
+					"controlId": "flexibleColumnLayout",
+					"controlAggregation": "midColumnPages"
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"viewId": "notFound"
+				}
+			}
+		}
+	}
+}

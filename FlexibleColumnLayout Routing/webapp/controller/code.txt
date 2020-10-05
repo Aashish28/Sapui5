@@ -1,0 +1,36 @@
+		_onRouteMatched: function () {
+			this.readData("/TypeDemandeSet", null , null).then(this.myData).catch(function(oError){
+					debugger;
+				});
+/*				function(oData){
+					debugger;
+				})*/
+		},
+		
+		myData: function(oData){
+		 debugger;	
+		},
+		
+		/**
+		 * read data from OData service
+		 * @param {string} sPath -- path to data
+		 * @param {map} mUrlParameters -- additional url parameters
+		 * @param {map} mParams -- other parameters of the OdataModel read method
+		 * @return { promise } resolves on successfull read from OData Service
+		 * @public
+		 */
+		readData: function (sPath, mUrlParameters, mParams) {
+			var that = this;
+
+			return new Promise(function (resolve, reject) {
+				//var mUrlParams = that.enrichUrlParameters(null, mUrlParameters);
+
+				var mReadSettings = mParams || {};
+
+				mReadSettings.success = resolve;
+				mReadSettings.error = reject;
+
+				//mReadSettings.urlParameters = mUrlParams;
+				that.getModel().read(sPath, mReadSettings);
+			});
+		},

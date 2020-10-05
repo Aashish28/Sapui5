@@ -1,0 +1,28 @@
+<mvc:View controllerName="com.BestPractice.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
+xmlns="sap.f" id="Main">
+	<FlexibleColumnLayout
+		id="flexibleColumnLayout"
+		stateChange=".onStateChanged"
+		backgroundDesign="Solid"
+		layout="{/layout}"/>	
+<!--<fl:FlexibleColumnLayout id="flexibleColumnLayout" backgroundDesign="Solid">
+		<fl:beginColumnPages>
+			<mvc:XMLView id="beginView" viewName="com.BestPractice.view.Master"/>
+		</fl:beginColumnPages>
+		<fl:midColumnPages>
+			<mvc:XMLView id="detailView" viewName="com.BestPractice.view.Detail"/>
+		</fl:midColumnPages>
+</fl:FlexibleColumnLayout>-->
+
+<!--	<Page id="page" title="{i18n>title}">
+		<content></content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<Button id="btnMsgPopover" icon="sap-icon://message-popup" text="{= ${messages>/}.length || '' }"
+						type="{= ${messages>/}.length > 0 ? 'Emphasized': 'Default' }" press="onMessagePopoverPress"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+	</Page>-->
+</mvc:View>
