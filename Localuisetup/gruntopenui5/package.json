@@ -4,7 +4,7 @@
   "description": "Grunt based openui5 practice",
   "private": true,
   "devDependencies": {
-    "grunt": "^1.2.1",
+    "grunt": "^1.5.2",
     "grunt-contrib-connect": "^3.0.0",
     "grunt-openui5": "^0.16.0"
   },
