@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "devDependencies": {
-    "@sap/ui5-builder-webide-extension": "1.0.x",
+    "@sap/ui5-builder-webide-extension": "1.1.x",
     "@ui5/cli": "1.13.0",
     "@uniorg/localneo": "^1.8.1"
   },
